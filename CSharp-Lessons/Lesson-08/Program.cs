@@ -6,7 +6,6 @@ namespace Lesson_08
     {
         static void Main(string[] args)
         {
-            /*
             //Task-01
             WelcomeUser();
 
@@ -58,20 +57,15 @@ namespace Lesson_08
             Console.Write("Enter a number: ");
             string siNum1 = Console.ReadLine();
             WriteSumIndividual(siNum1);
-            */
 
-
+            //Array With Method Values
             string outPar1 = "";
             string text1 = "Method1";
-
             string outPar2 = "";
             string text2 = "Method2";
-
             string[] arr = new string[2] { Method1(text1, ref outPar1), Method2(text2, ref outPar2) };
             Console.WriteLine($"{outPar1}{arr[0]}");
             Console.WriteLine($"{outPar1}{arr[1]}");
-
-
         }
 
         #region Task-01
