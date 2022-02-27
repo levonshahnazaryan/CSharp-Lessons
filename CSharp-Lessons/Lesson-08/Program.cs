@@ -43,12 +43,24 @@ namespace Lesson_08
             Console.Write("Input the Exponent: ");
             string exNum2 = Console.ReadLine();
             WriteExponentNumbers(exNum1, exNum2);
-            */
 
             //Task-08
             Console.Write("Input number of Fibonacci Series: ");
             string fbNum1 = Console.ReadLine();
             WriteFibonacciNumbers(fbNum1);
+
+            //Task-09
+            Console.Write("Input a number: ");
+            string prNum1 = Console.ReadLine();
+            WritePrimeNumbers(prNum1);
+
+            //Task-10
+            Console.Write("Enter a number: ");
+            string siNum1 = Console.ReadLine();
+            WriteSumIndividual(siNum1);
+            */
+
+
         }
 
         #region Task-01
@@ -131,6 +143,26 @@ namespace Lesson_08
                 numL = num;
                 i++;
             }
+        }
+        #endregion
+        #region Task-09
+        public static void WritePrimeNumbers(string num1)
+        {
+            decimal.TryParse(num1, out decimal _num1);
+            Console.WriteLine("The number {0} {1} prime", _num1, (_num1 % 2 == 0 ? "is" : "is not"));
+        }
+        #endregion
+        #region Task-10
+        public static void WriteSumIndividual(string num1)
+        {
+            int num = 0;
+            for (int i = 0; i < num1.Length; i++)
+            {
+                int.TryParse(num1[i].ToString(), out int res);
+                if (res > 0)
+                    num += res;
+            }
+            Console.WriteLine($"The sum of the digits of the number {num1} is: {num}");
         }
         #endregion
     }
