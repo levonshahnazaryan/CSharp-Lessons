@@ -61,6 +61,17 @@ namespace Lesson_08
             */
 
 
+            string outPar1 = "";
+            string text1 = "Method1";
+
+            string outPar2 = "";
+            string text2 = "Method2";
+
+            string[] arr = new string[2] { Method1(text1, ref outPar1), Method2(text2, ref outPar2) };
+            Console.WriteLine($"{outPar1}{arr[0]}");
+            Console.WriteLine($"{outPar1}{arr[1]}");
+
+
         }
 
         #region Task-01
@@ -163,6 +174,20 @@ namespace Lesson_08
                     num += res;
             }
             Console.WriteLine($"The sum of the digits of the number {num1} is: {num}");
+        }
+        #endregion
+
+
+        #region Array With Method Values
+        public static string Method1(string text, ref string outPar)
+        {
+            outPar = "Method name is: ";
+            return text;
+        }
+        public static string Method2(string text, ref string outPar)
+        {
+            outPar = "Method name is: ";
+            return text;
         }
         #endregion
     }
