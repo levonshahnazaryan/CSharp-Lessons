@@ -31,6 +31,22 @@ namespace CSharp_Level2
                 Console.Write($"{item} ");
 
 
+            //marge and Sort
+            int[] array1 = { 2, 3, 4, 5, 8 };
+            int[] array2 = { 1, 6, 7, 9, 10 };
+            Console.Write("Marge and Sort: ");
+            var margeandsort = Extensions.MargeAndSort(array1, array2);
+            foreach (var item in margeandsort)
+                Console.Write($"{item} ");
+
+
+            Console.WriteLine("");
+            //Marge Sort
+            int[] arrayMarge = { 10, 3, 8, 5, 2, 4, 11, 1, 7, 13, 6, 9 };
+            Console.Write("Marge Sort: ");
+            var marge = Extensions.Marge_Sort(arrayMarge);
+            foreach (var item in marge)
+                Console.Write($"{item} ");
         }
     }
 }

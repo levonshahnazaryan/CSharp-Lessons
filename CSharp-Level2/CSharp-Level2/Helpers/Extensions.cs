@@ -1,4 +1,6 @@
-﻿namespace CSharp_Level2.Helpers
+﻿using System.Linq;
+
+namespace CSharp_Level2.Helpers
 {
     public static class Extensions
     {
@@ -59,6 +61,61 @@
                     i -= 1;
                 }
             }
+            return array;
+        }
+
+
+
+
+        //https://www.youtube.com/watch?v=EunSmHT1mVI
+        public static int[] Marge_Sort(int[] array)
+        {
+            if (array.Length == 1)
+                return array;
+
+            int dev = array.Length / 2;
+
+            int[] array1 = Marge_Sort(array[0..dev]);
+            int[] array2 = Marge_Sort(array[dev..array.Length]);
+            return MargeAndSort(array1, array2);
+        }
+
+        public static int[] MargeAndSort(int[] array1, int[] array2)
+        {
+            int[] array = new int[array1.Length + array2.Length];
+            int i = 0;
+            int j = 0;
+            int index = 0;
+            while (i < array1.Length && j < array2.Length)
+            {
+                if (array1[i] < array2[j])
+                {
+                    array[index] = array1[i];
+                    index++;
+                    i++;
+                }
+                else
+                {
+                    array[index] = array2[j];
+                    index++;
+                    j++;
+                }
+            }
+
+            while (i < array1.Length)
+            {
+                array[index] = array1[i];
+                index++;
+                i++;
+            }
+
+            while (j < array2.Length)
+            {
+                array[index] = array2[j];
+                index++;
+                j++;
+            }
+
             return array;
         }
     }
