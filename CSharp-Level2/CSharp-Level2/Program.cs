@@ -14,6 +14,7 @@ namespace CSharp_Level2
             foreach (var item in bubble)
                 Console.Write($"{item} ");
 
+
             Console.WriteLine("");
             //Selection Sort
             int[] arraySelection = { 3, 8, 5, 2, 4, 1, 7, 6, 9 };
@@ -21,6 +22,7 @@ namespace CSharp_Level2
             var selecttion = Extensions.Selection_Sort(arraySelection);
             foreach (var item in selecttion)
                 Console.Write($"{item} ");
+
 
             Console.WriteLine("");
             //Insertion Sort
@@ -31,6 +33,7 @@ namespace CSharp_Level2
                 Console.Write($"{item} ");
 
 
+            Console.WriteLine("");
             //marge and Sort
             int[] array1 = { 2, 3, 4, 5, 8 };
             int[] array2 = { 1, 6, 7, 9, 10 };

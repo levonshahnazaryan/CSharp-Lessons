@@ -64,9 +64,6 @@ namespace CSharp_Level2.Helpers
             return array;
         }
 
-
-
-
         //https://www.youtube.com/watch?v=EunSmHT1mVI
         public static int[] Marge_Sort(int[] array)
         {
@@ -118,5 +115,8 @@ namespace CSharp_Level2.Helpers
 
             return array;
         }
+
+
+
     }
 }
