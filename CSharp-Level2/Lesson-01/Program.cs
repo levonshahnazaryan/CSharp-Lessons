@@ -21,7 +21,17 @@ namespace Lesson_01
             seriesX6.EngineType = CarEngineType.Diesel.ToString();
             seriesX6.GetCarDetails();
 
+            Console.WriteLine("-----------With Constructor-------------------");
+
+            Series4 cSeries4 = new(2014, CarColors.Green.ToString(), CarEngineType.Benzin.ToString());
+            cSeries4.GetCarDetails();
+
             Console.WriteLine("----------------------------------------------");
+
+            SeriesX6 cSeriesX6 = new(2000, CarColors.Red.ToString(), CarEngineType.Diesel.ToString());
+            cSeriesX6.GetCarDetails();
+
+
             Console.WriteLine("Press Any Key to Exit..");
             Console.ReadLine();
         }
