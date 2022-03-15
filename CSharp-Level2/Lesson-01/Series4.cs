@@ -8,6 +8,7 @@ namespace Lesson_01
         {
 
         }
+
         public Series4(int productionDate, string color, string engineType)
         {
             ProductionDate = productionDate;

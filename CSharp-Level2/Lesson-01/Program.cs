@@ -21,7 +21,7 @@ namespace Lesson_01
             seriesX6.EngineType = CarEngineType.Diesel.ToString();
             seriesX6.GetCarDetails();
 
-            Console.WriteLine("-----------With Constructor-------------------");
+            Console.WriteLine("-----------With Parametors in to Constructor-------------------");
 
             Series4 cSeries4 = new(2014, CarColors.Green.ToString(), CarEngineType.Benzin.ToString());
             cSeries4.GetCarDetails();
