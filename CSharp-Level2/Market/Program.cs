@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Market
+﻿namespace Market
 {
     class Program
     {
