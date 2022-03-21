@@ -7,7 +7,8 @@ namespace Market
         static void Main(string[] args)
         {
             Shose shose = new Shose(25000, 42);
-
+            shose.GetPrice();
+            shose.GetSize();
         }
     }
 }
