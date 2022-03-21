@@ -7,6 +7,8 @@ namespace Lesson_01
     {
         static void Main(string[] args)
         {
+
+
             Series4 series4 = new();
             series4.ProductionDate = 2021;
             series4.Color = CarColors.Black.ToString();
@@ -34,9 +36,33 @@ namespace Lesson_01
 
             Console.WriteLine("Press Any Key to Exit..");
             Console.ReadLine();
+
+            string aaa = (1).ToString();
         }
     }
+
+}
+
+abstract class MyFirstClass
+{
+
 }
 
 //GBLessson
 //Boxing UnBoxing
+
+//protected internal
+//private protected
+// virtual method
+//override
+
+//polimorfizm@ nael gitic
+//class default acsses
+
+//upcust
+//downcust
+
+// object vs instance
+//Rested, Seald
+//Interfacei mej method inchi hamar e petq????????????????
+//abstract class
