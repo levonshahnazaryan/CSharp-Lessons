@@ -1,6 +1,7 @@
 ﻿using PeopleWork.Enums;
 using PeopleWork.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PeopleWork.Services
 {
@@ -54,14 +55,16 @@ namespace PeopleWork.Services
                 CarPrice = 3000
             });
         }
-
         public string SearchPeople(double salery)
         {
             int peopleId = 0;
             foreach (var item in PeopleSalery)
             {
                 if (item.Value.Equals(salery))
+                {
                     peopleId = item.Key;
+                    break;
+                }
             }
             if (peopleId == 0)
                 return "No Data";
@@ -73,7 +76,10 @@ namespace PeopleWork.Services
             foreach (var item in PeopleCar)
             {
                 if (item.CarPrice.Equals(carPrice))
+                {
                     peopleId = item.PeopleId;
+                    break;
+                }
             }
             if (peopleId == 0)
                 return "No Data";
@@ -81,9 +87,18 @@ namespace PeopleWork.Services
         }
         public string SearchPeople(int familyCount)
         {
-            var data = PeopleFamily;
-
-            return "";
+            int peopleId = 0;
+            foreach (var item in PeopleFamily.GroupBy(i => i.PeopleId))
+            {
+                if (familyCount == item.Count())
+                {
+                    peopleId = item.Key;
+                    break;
+                }
+            }
+            if (peopleId == 0)
+                return "No Data";
+            return GetPeopleData(peopleId);
         }
         public string SearchPeople(string name)
         {
@@ -91,7 +106,10 @@ namespace PeopleWork.Services
             foreach (var item in PeopleName)
             {
                 if (item.Value.Equals(name))
+                {
                     peopleId = item.Key;
+                    break;
+                }
             }
             if (peopleId == 0)
                 return "No Data";
@@ -122,7 +140,7 @@ namespace PeopleWork.Services
             if (string.IsNullOrEmpty(car))
                 car = "No Data, ";
 
-            return $"Name: {name}, Age: {age}, Salery: {salery}$, Is Marriage: {isMarriage}, Family: {family} Car: {car}";
+            return $"Name: {name},\nAge: {age},\nSalery: {salery}$,\nIs Marriage: {isMarriage},\nFamily: {family}\nCar: {car}";
         }
     }
 }

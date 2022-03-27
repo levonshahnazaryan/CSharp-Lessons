@@ -9,9 +9,8 @@ namespace PeopleWork
         {
             IPeopleRepasitory people = new PeopleRepasitory();
             people.AddPeople();
-            var data = people.SearchPeople(500000F);
+            var data = people.SearchPeople(2);
             Console.WriteLine(data);
-
         }
     }
 }
