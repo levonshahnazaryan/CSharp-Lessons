@@ -7,7 +7,7 @@ namespace PeopleWork.Services
 {
     public class PeopleRepasitory : People, IPeopleRepasitory
     {
-        public void AddPeople()
+        public PeopleRepasitory()
         {
             PeopleName = new Dictionary<int, string>();
             PeopleAge = new Dictionary<int, int>();
@@ -15,7 +15,10 @@ namespace PeopleWork.Services
             PeopleMarriage = new Dictionary<int, bool>();
             PeopleFamily = new List<PeopleFamily>();
             PeopleCar = new List<PeopleCar>();
+        }
 
+        public void AddPeople()
+        {
             PeopleName.Add(1, "Vahagn");
             PeopleName.Add(2, "Samvel");
 
@@ -47,7 +50,6 @@ namespace PeopleWork.Services
                 CarMark = "Kia",
                 CarPrice = 25000
             });
-
             PeopleCar.Add(new PeopleCar
             {
                 PeopleId = 2,
