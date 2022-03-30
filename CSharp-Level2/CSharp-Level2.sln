@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market", "Market\Market.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleWork", "PeopleWork\PeopleWork.csproj", "{7FF124DC-B98A-4737-ADEF-589103B1ACCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionExaption", "RecursionExaption\RecursionExaption.csproj", "{C97FA7C6-CB59-48C8-9303-C141C57EB3B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursionExaption", "RecursionExaption\RecursionExaption.csproj", "{C97FA7C6-CB59-48C8-9303-C141C57EB3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson-04", "Lesson-04\Lesson-04.csproj", "{251E6723-DC67-48BA-8987-7F0C42FAA745}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{C97FA7C6-CB59-48C8-9303-C141C57EB3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C97FA7C6-CB59-48C8-9303-C141C57EB3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C97FA7C6-CB59-48C8-9303-C141C57EB3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251E6723-DC67-48BA-8987-7F0C42FAA745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251E6723-DC67-48BA-8987-7F0C42FAA745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251E6723-DC67-48BA-8987-7F0C42FAA745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251E6723-DC67-48BA-8987-7F0C42FAA745}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
