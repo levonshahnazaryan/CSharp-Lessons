@@ -11,13 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson-02", "Lesson-02\Less
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson-03", "Lesson-03\Lesson-03.csproj", "{3F8A26F4-797C-4994-9F1F-E4A5B512108C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market", "Market\Market.csproj", "{D179F6CD-EE9D-46BD-9A9A-B74AF7577B3E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleWork", "PeopleWork\PeopleWork.csproj", "{7FF124DC-B98A-4737-ADEF-589103B1ACCC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursionExaption", "RecursionExaption\RecursionExaption.csproj", "{C97FA7C6-CB59-48C8-9303-C141C57EB3B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson-04", "Lesson-04\Lesson-04.csproj", "{251E6723-DC67-48BA-8987-7F0C42FAA745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson-04", "Lesson-04\Lesson-04.csproj", "{251E6723-DC67-48BA-8987-7F0C42FAA745}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{3F8A26F4-797C-4994-9F1F-E4A5B512108C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F8A26F4-797C-4994-9F1F-E4A5B512108C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F8A26F4-797C-4994-9F1F-E4A5B512108C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D179F6CD-EE9D-46BD-9A9A-B74AF7577B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D179F6CD-EE9D-46BD-9A9A-B74AF7577B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D179F6CD-EE9D-46BD-9A9A-B74AF7577B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D179F6CD-EE9D-46BD-9A9A-B74AF7577B3E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7FF124DC-B98A-4737-ADEF-589103B1ACCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7FF124DC-B98A-4737-ADEF-589103B1ACCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FF124DC-B98A-4737-ADEF-589103B1ACCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
